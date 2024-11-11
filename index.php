@@ -1,11 +1,9 @@
 <?php
 
-// 変数
+// 定数
 
-$test_1 = 123;
-$test_2 = 456;
+const MAX= 10;
 
-$test_3 = $test_1 . $test_2;
 //$test = 'テストです';
 
 //echo $test;
