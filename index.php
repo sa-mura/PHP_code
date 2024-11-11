@@ -4,10 +4,10 @@
 
 const MAX= 10;
 
-//$test = 'テストです';
+$test = 'テストです';
 
-//echo $test;
-var_dump($test_3);
+echo $test;
+var_dump($test);
 
 
 ?>
