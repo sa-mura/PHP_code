@@ -6,7 +6,7 @@ const MAX= 10;
 
 $test = 'テストです';
 
-echo $test;
+//echo $test;
 var_dump($test);
 
 
