@@ -110,9 +110,11 @@ if(!empty($_POST['btn_submit'])){
 <?php if($pageFlag === 2 ) : ?>
 <?php if($_POST['csrf'] === $_SESSION['csrfToken']) :?>
 
-// DB接続
+<?php require '../mainte/insert.php';
 
-// DB保存
+insertContact($_POST);
+?>
+
 送信が完了しました。
 
 <?php unset($_SESSION['csrfToken']); ?>
