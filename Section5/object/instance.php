@@ -41,5 +41,6 @@ echo'<br>';
 $instance->getProduct();
 echo '<br>';
 
+//静的（static） クラス名::関数名
 Product::getStaticProduct('静的');
 echo'<br>';
