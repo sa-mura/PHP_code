@@ -28,7 +28,7 @@ if(!isset($_SESSION['visited'])){
         $_SESSION['date'] = date('c');
     }
 
-setcookie("id", 'aaa', , '/');
+//setcookie("id", '7', , '/');
 
 echo '<pre>';
 var_dump($_SESSION);
