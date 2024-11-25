@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,14 @@ use App\Http\Controllers\TestController;
 |
 */
 
+Route::get('tests/test', [ TestController::class, 'index']);
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::get('tests/test', [TestController::class, 'index'] );
+require __DIR__.'/auth.php';
